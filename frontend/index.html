@@ -11,9 +11,12 @@
     
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo-area">
+        <div class="logo-area" style="display: flex; align-items: center;">
             <img src="img/logo.jpeg" alt="Saarthi AI" class="main-logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'50\' font-size=\'40\'>🦋</text></svg>'">
             <span class="logo-text"><span class="text-saffron">Saar</span><span class="text-blue">thi</span> AI</span>
+            <div id="userProfileIcon" style="display: none; align-items: center; gap: 8px; background: #e0f2fe; padding: 4px 12px; border-radius: 20px; font-weight: bold; color: #0369a1; margin-left: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border: 1px solid #bae6fd;">
+                <span style="font-size: 18px;">👤</span><span id="userProfileName" style="font-size: 13px;">User</span>
+            </div>
         </div>
         <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
