@@ -74,11 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('dashboardNavBtn').style.display = 'inline-block';
             document.getElementById('userProfileIcon').style.display = 'flex';
             document.getElementById('userProfileName').innerText = 'Admin';
+            window.currentUserEmail = 'admin@saarthi.ai';
         } else {
             alert(`Successfully ${authMode === 'login' ? 'logged in' : 'registered'} as ${email.value}!`);
             document.getElementById('dashboardNavBtn').style.display = 'none'; 
             document.getElementById('userProfileIcon').style.display = 'flex';
             document.getElementById('userProfileName').innerText = email.value.split('@')[0];
+            window.currentUserEmail = email.value;
         }
         document.getElementById('loginNavBtn').style.display = 'none';
         document.getElementById('registerNavBtn').style.display = 'none';
