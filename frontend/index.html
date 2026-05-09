@@ -20,8 +20,8 @@
             <li><a href="#problem">The Problem</a></li>
             <li><a href="#solution">Solution</a></li>
             <li><a href="#" onclick="openModal('microEmploymentModal')">Micro-Employment</a></li>
-            <li><a href="#discover" class="nav-highlight">Find Schemes</a></li>
-            <li><a href="#" onclick="openModal('dashboardModal')" class="text-blue" style="font-weight: bold;">Track Applications</a></li>
+            
+            <li><a href="#" onclick="event.preventDefault(); loadTasks(); openModal('dashboardModal');" class="text-blue" style="font-weight: bold;">Track Applications</a></li>
             <li><a href="#" id="dashboardNavBtn" style="display: none;">Admin Dashboard</a></li>
         </ul>
         <div class="nav-actions">
@@ -120,32 +120,7 @@
     </section>
     
 
-    <!-- Micro-Employment USP -->
-    <section id="usp" class="info-section text-center">
-        <div class="container">
-            <div class="usp-banner">
-                <div class="usp-icon">💡</div>
-                <h2 class="usp-title">Earn While Helping</h2>
-                <p class="usp-text">“Saarthi helps users access government opportunities while creating income opportunities for trained assistants.”</p>
-                <p class="mt-20 text-dark">Saarthi turns public service access into a micro-employment ecosystem. Helping citizens apply, helping assistants earn.</p>
-                
-                <div class="grid-3 mt-40 text-left">
-                    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 12px;">
-                        <h4 class="text-blue">Revenue Split Example</h4>
-                        <p style="font-size: 14px; margin-top: 10px;">User pays <strong>₹50</strong> for assisted application.<br>Assistant earns <strong>₹35</strong>.<br>Platform keeps <strong>₹15</strong>.</p>
-                    </div>
-                    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 12px;">
-                        <h4 class="text-green">Social Impact</h4>
-                        <p style="font-size: 14px; margin-top: 10px;">Increasing access for rural citizens, supporting farmers, and creating massive digital employment.</p>
-                    </div>
-                    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 12px;">
-                        <h4 class="text-saffron">Trust & Safety</h4>
-                        <p style="font-size: 14px; margin-top: 10px;">Consent-first workflow, verified assistants, strict NDA enforcement, and secure document handling.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <div class="divider-line"></div>
 
