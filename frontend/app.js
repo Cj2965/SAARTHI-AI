@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ── Small Modals (Sector / Profile popups) ────────────────
     window.openSmallModal  = id => openModal(id);
+    window.openModal = openModal;
     window.closeSmallModal = id => closeModal(id);
 
     // ── Auth Modal ────────────────────────────────────────────
@@ -387,6 +388,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ── Dashboard Task Loader ─────────────────────────────────
     let tasks = [];
 
+    window.loadTasks = loadTasks;
     async function loadTasks() {
         const container = document.getElementById('tasksContainer');
         if (!container) return;
