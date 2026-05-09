@@ -1,0 +1,71 @@
+[
+  {
+    "task_id": "REQ-6718",
+    "scheme_name": "General Application Assistance",
+    "user_need": "User explicitly requested help from Rajesh K.",
+    "assistant_name": "Rajesh K.",
+    "language": "Hindi, English",
+    "status": "Completed",
+    "fee": 50
+  },
+  {
+    "task_id": "REQ-51032",
+    "scheme_name": "General Application Assistance",
+    "user_need": "User explicitly requested help from Priya S.",
+    "assistant_name": "Priya S.",
+    "language": "Kannada, English",
+    "status": "Completed",
+    "fee": 50
+  },
+  {
+    "task_id": "REQ-28780",
+    "scheme_name": "General Application Assistance",
+    "user_need": "User explicitly requested help from Priya S.",
+    "assistant_name": "Priya S.",
+    "language": "Kannada, English",
+    "status": "Completed",
+    "fee": 50
+  },
+  {
+    "task_id": "REQ-5515",
+    "scheme_name": "General Application Assistance",
+    "user_need": "User explicitly requested help from Rajesh K.",
+    "assistant_name": "Rajesh K.",
+    "language": "Hindi, English",
+    "status": "Completed",
+    "fee": 50
+  },
+  {
+    "task_id": "TASK-3D64DCB4",
+    "user_need": "Business loan",
+    "scheme_name": "Mudra Loan",
+    "assistant_id": "A001",
+    "assistant_name": "Suresh Kumar",
+    "language": "English",
+    "fee": 50,
+    "status": "Completed",
+    "created_at": "2026-05-09T07:48:04.211974"
+  },
+  {
+    "task_id": "TASK-18FA191C",
+    "user_need": "Application Help",
+    "scheme_name": "Student Scholarship Scheme",
+    "assistant_id": "A001",
+    "assistant_name": "Suresh Kumar",
+    "language": "English",
+    "fee": 50,
+    "status": "Completed",
+    "created_at": "2026-05-09T10:29:32.752882"
+  },
+  {
+    "task_id": "TASK-28C8E6E3",
+    "user_need": "Application Help",
+    "scheme_name": "Student Scholarship Scheme",
+    "assistant_id": "A001",
+    "assistant_name": "Suresh Kumar",
+    "language": "English",
+    "fee": 50,
+    "status": "Pending",
+    "created_at": "2026-05-09T11:18:27.813756"
+  }
+]

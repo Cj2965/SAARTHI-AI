@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Data Entry Operator",
+    "sector": "Education & Jobs",
+    "category": "Job",
+    "state": "Karnataka",
+    "qualifications": ["12th Pass", "Basic Computer Skills"],
+    "salary": "15,000 / month",
+    "documents": ["Resume", "Aadhaar", "12th Marksheet"],
+    "deadline": "2026-06-15",
+    "description": "Government affiliated data entry position for local municipality."
+  },
+  {
+    "name": "Anganwadi Worker",
+    "sector": "Education & Jobs",
+    "category": "Job",
+    "state": "All",
+    "gender_preference": "Female",
+    "qualifications": ["10th Pass"],
+    "salary": "10,000 / month + Incentives",
+    "documents": ["Aadhaar", "10th Marksheet", "Address Proof"],
+    "deadline": "2026-07-01",
+    "description": "Community health and childcare worker."
+  },
+  {
+    "name": "Rural Post Office Assistant",
+    "sector": "Education & Jobs",
+    "category": "Job",
+    "state": "All",
+    "qualifications": ["10th Pass", "Basic English/Local Language"],
+    "salary": "12,000 / month",
+    "documents": ["Aadhaar", "10th Marksheet"],
+    "deadline": "2026-05-30",
+    "description": "Gramin Dak Sevak (GDS) position in rural areas."
+  },
+  {
+    "name": "Skill India CNC Operator Training",
+    "sector": "Education & Jobs",
+    "category": "Training",
+    "state": "All",
+    "qualifications": ["ITI / 12th Pass"],
+    "salary": "Stipend: 5,000 / month",
+    "documents": ["Aadhaar", "ITI Certificate", "Photos"],
+    "deadline": "2026-08-15",
+    "description": "6-month practical training on CNC machines with job placement guarantee."
+  },
+  {
+    "name": "Panchayat Sahayak",
+    "sector": "Education & Jobs",
+    "category": "Job",
+    "state": "Uttar Pradesh",
+    "qualifications": ["12th Pass"],
+    "salary": "6,000 / month",
+    "documents": ["Aadhaar", "12th Marksheet", "Domicile Certificate"],
+    "deadline": "2026-06-30",
+    "description": "Assistant role in local Gram Panchayat office for data management."
+  }
+]

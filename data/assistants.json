@@ -1,0 +1,52 @@
+[
+  {
+    "id": "A001",
+    "name": "Suresh Kumar",
+    "location": "Bangalore Rural",
+    "languages": ["Hindi", "Kannada", "English"],
+    "rating": 4.8,
+    "skills": ["MSME forms", "Loans", "Welfare applications"],
+    "available": true,
+    "fee": 50
+  },
+  {
+    "id": "A002",
+    "name": "Priya Sharma",
+    "location": "Delhi NCR",
+    "languages": ["Hindi", "English"],
+    "rating": 4.9,
+    "skills": ["Scholarships", "Job Applications", "Skill Training"],
+    "available": true,
+    "fee": 40
+  },
+  {
+    "id": "A003",
+    "name": "Ramesh Gowda",
+    "location": "Mysore",
+    "languages": ["Kannada"],
+    "rating": 4.6,
+    "skills": ["Agriculture Schemes", "Crop Insurance", "Panchayat Forms"],
+    "available": true,
+    "fee": 30
+  },
+  {
+    "id": "A004",
+    "name": "Anita Desai",
+    "location": "Mumbai",
+    "languages": ["Hindi", "Marathi", "English"],
+    "rating": 4.7,
+    "skills": ["Women Entrepreneurship", "Mudra Loan", "NGO Grants"],
+    "available": false,
+    "fee": 60
+  },
+  {
+    "id": "A005",
+    "name": "Mohammad Ali",
+    "location": "Hyderabad",
+    "languages": ["Hindi", "Telugu", "English"],
+    "rating": 4.5,
+    "skills": ["Disability Support", "Senior Citizen Pension", "Ration Card"],
+    "available": true,
+    "fee": 40
+  }
+]

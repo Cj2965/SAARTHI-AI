@@ -1,0 +1,255 @@
+[
+    {
+        "name": "Mudra Loan",
+        "sector": "Finance & Business",
+        "category": "Loan",
+        "target_user": "Entrepreneurs",
+        "state": "All",
+        "income_limit": 1000000,
+        "documents": [
+            "Aadhaar",
+            "Bank Passbook",
+            "Business Details",
+            "Income Proof"
+        ],
+        "deadline": "Open",
+        "description": "Financial support for micro-enterprises and non-corporate small businesses.",
+        "official_link": "https://www.mudra.org.in/"
+    },
+    {
+        "name": "PMKVY Skill Training",
+        "sector": "Education & Jobs",
+        "category": "Training",
+        "target_user": "Youth",
+        "state": "All",
+        "income_limit": null,
+        "documents": [
+            "Aadhaar",
+            "Education Certificates",
+            "Photos"
+        ],
+        "deadline": "2026-12-31",
+        "description": "Pradhan Mantri Kaushal Vikas Yojana for industry-relevant skill training.",
+        "official_link": "http://pmkvyofficial.org/"
+    },
+    {
+        "name": "Startup India Seed Fund",
+        "sector": "Finance & Business",
+        "category": "Funding",
+        "target_user": "Startups",
+        "state": "All",
+        "income_limit": null,
+        "documents": [
+            "DPIIT Registration",
+            "Pitch Deck",
+            "Bank Details"
+        ],
+        "deadline": "Open",
+        "description": "Financial assistance to startups for proof of concept, prototype development.",
+        "official_link": "https://seedfund.startupindia.gov.in/"
+    },
+    {
+        "name": "Women Entrepreneurship Scheme",
+        "sector": "Finance & Business",
+        "category": "Loan",
+        "target_user": "Women",
+        "state": "All",
+        "income_limit": 500000,
+        "gender_preference": "Female",
+        "documents": [
+            "Aadhaar",
+            "Business Plan",
+            "Income Proof"
+        ],
+        "deadline": "Open",
+        "description": "Special financial assistance and training for women entrepreneurs.",
+        "official_link": "#"
+    },
+    {
+        "name": "MSME Credit Support",
+        "sector": "Finance & Business",
+        "category": "Loan",
+        "target_user": "MSME",
+        "state": "All",
+        "income_limit": 5000000,
+        "documents": [
+            "Udyam Registration",
+            "Aadhaar",
+            "Financial Statements"
+        ],
+        "deadline": "Open",
+        "description": "Collateral-free credit to micro and small enterprises.",
+        "official_link": "https://msme.gov.in/"
+    },
+    {
+        "name": "Student Scholarship Scheme",
+        "sector": "Education & Jobs",
+        "category": "Scholarship",
+        "target_user": "Students",
+        "state": "All",
+        "income_limit": 250000,
+        "documents": [
+            "Aadhaar",
+            "Income Certificate",
+            "Mark Sheets",
+            "Bank Details"
+        ],
+        "deadline": "2026-08-31",
+        "description": "Financial aid for students from economically weaker sections.",
+        "official_link": "https://scholarships.gov.in/"
+    },
+    {
+        "name": "Farmer Crop Insurance",
+        "sector": "Agriculture",
+        "category": "Insurance",
+        "target_user": "Farmers",
+        "state": "All",
+        "income_limit": null,
+        "documents": [
+            "Aadhaar",
+            "Land Records",
+            "Bank Passbook"
+        ],
+        "deadline": "Seasonal",
+        "description": "Pradhan Mantri Fasal Bima Yojana for crop insurance against natural calamities.",
+        "official_link": "https://pmfby.gov.in/"
+    },
+    {
+        "name": "Ration Support Scheme",
+        "sector": "Welfare & Public Support",
+        "category": "Welfare",
+        "target_user": "BPL Families",
+        "state": "All",
+        "income_limit": 100000,
+        "documents": [
+            "Ration Card",
+            "Aadhaar",
+            "Income Proof"
+        ],
+        "deadline": "Open",
+        "description": "Subsidized food grains for Below Poverty Line families.",
+        "official_link": "#"
+    },
+    {
+        "name": "Senior Citizen Welfare Scheme",
+        "sector": "Welfare & Public Support",
+        "category": "Pension",
+        "target_user": "Senior Citizens",
+        "state": "All",
+        "income_limit": null,
+        "documents": [
+            "Aadhaar",
+            "Age Proof",
+            "Bank Details"
+        ],
+        "deadline": "Open",
+        "description": "Pension and health support for citizens above 60 years of age.",
+        "official_link": "#"
+    },
+    {
+        "name": "NGO Grant Support",
+        "sector": "Community & Social Support",
+        "category": "Grant",
+        "target_user": "NGOs",
+        "state": "All",
+        "income_limit": null,
+        "documents": [
+            "NGO Darpan ID",
+            "Audit Reports",
+            "Project Proposal"
+        ],
+        "deadline": "2026-10-15",
+        "description": "Grants for NGOs working in rural development and education.",
+        "official_link": "https://ngodarpan.gov.in/"
+    },
+    {
+        "name": "Disability Support Scheme",
+        "sector": "Welfare & Public Support",
+        "category": "Welfare",
+        "target_user": "Differently Abled",
+        "state": "All",
+        "income_limit": 200000,
+        "documents": [
+            "Disability Certificate",
+            "Aadhaar",
+            "Income Proof"
+        ],
+        "deadline": "Open",
+        "description": "Financial assistance and equipment provision for differently abled individuals.",
+        "official_link": "#"
+    },
+    {
+        "name": "Rural Self Employment Training",
+        "sector": "Education & Jobs",
+        "category": "Training",
+        "target_user": "Rural Youth",
+        "state": "All",
+        "income_limit": null,
+        "documents": [
+            "Aadhaar",
+            "Address Proof",
+            "Photos"
+        ],
+        "deadline": "Open",
+        "description": "Skill training programs focused on self-employment in rural areas.",
+        "official_link": "#"
+    },
+    {
+        "name": "Personal Two-Wheeler Loan",
+        "sector": "Personal Finance",
+        "category": "Loan",
+        "target_user": "Citizens",
+        "state": "All",
+        "income_limit": null,
+        "documents": [
+            "Aadhaar",
+            "PAN Card",
+            "Income Proof",
+            "Quotation of Vehicle"
+        ],
+        "deadline": "Open",
+        "description": "Subsidized personal loans for purchasing two-wheelers for commuting and daily transport.",
+        "official_link": "#"
+    },
+    {
+        "id": "s14",
+        "name": "National Merit Scholarship",
+        "description": "Scholarship for meritorious students from low-income families to pursue higher education.",
+        "sector": "Education & Jobs",
+        "state": "All",
+        "income_limit": "250000",
+        "benefits": "\u20b920,000 per annum for tuition fees.",
+        "deadline": "2026-08-30"
+    },
+    {
+        "id": "s15",
+        "name": "Krishi Vikas Yojana",
+        "description": "Financial assistance to farmers for purchasing modern agricultural equipment.",
+        "sector": "Agriculture",
+        "state": "All",
+        "income_limit": "300000",
+        "benefits": "Subsidy up to 40% on tractor and equipment purchase.",
+        "deadline": "2026-10-15"
+    },
+    {
+        "id": "s16",
+        "name": "Arogya Sanjeevani",
+        "description": "Health insurance cover for hospitalization expenses for poor families.",
+        "sector": "Healthcare",
+        "state": "All",
+        "income_limit": "150000",
+        "benefits": "Cover up to \u20b95,00,000 per family per year.",
+        "deadline": "2026-12-31"
+    },
+    {
+        "id": "s17",
+        "name": "Mahila Udyami Scheme",
+        "description": "Special loan scheme for women entrepreneurs to start small businesses.",
+        "sector": "Business & Finance",
+        "state": "All",
+        "gender_preference": "Female",
+        "income_limit": "400000",
+        "benefits": "Collateral-free loan up to \u20b910 Lakhs.",
+        "deadline": "2026-11-20"
+    }
+]

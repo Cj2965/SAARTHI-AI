@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saarthi AI - Bridging Citizens with Government Opportunities</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-area">
+            <img src="img/logo.jpeg" alt="Saarthi AI" class="main-logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'50\' font-size=\'40\'>🦋</text></svg>'">
+            <span class="logo-text"><span class="text-saffron">Saar</span><span class="text-blue">thi</span> AI</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#problem">The Problem</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#" onclick="openModal('microEmploymentModal')">Micro-Employment</a></li>
+            <li><a href="#discover" class="nav-highlight">Find Schemes</a></li>
+            <li><a href="#" onclick="openModal('dashboardModal')" class="text-blue" style="font-weight: bold;">Track Applications</a></li>
+            <li><a href="#" id="dashboardNavBtn" style="display: none;">Admin Dashboard</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="loginNavBtn" class="btn-ghost">Login</button>
+            <button id="registerNavBtn" class="btn-primary">Register</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-wrapper">
+        <div class="hero-content">
+            <h1 class="hero-title animate-pop">Bridging citizens with <br><span class="text-saffron">government opportunities</span></h1>
+            <p class="hero-subtitle">Saarthi is an AI + human-assisted platform that helps citizens discover and apply for government schemes, jobs, funding, scholarships, welfare programs, and public services.</p>
+            <div class="hero-actions">
+                <a href="#discover" class="btn-primary btn-lg">Start Exploring</a>
+                <a href="#problem" class="btn-secondary btn-lg">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section id="problem" class="info-section bg-light">
+        <div class="container text-center">
+            <h2 class="section-title text-blue">The Problem</h2>
+            <p class="section-desc">Millions of citizens miss out on life-changing opportunities because of a lack of awareness, language barriers, and complex application processes. They simply do not know what they are eligible for or how to apply.</p>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="info-section">
+        <div class="container">
+            <h2 class="section-title text-center text-saffron">The Solution</h2>
+            <div class="grid-3 mt-40">
+                <div class="card">
+                    <div class="card-icon bg-blue-light text-blue">🤖</div>
+                    <h3>AI Matching</h3>
+                    <p>Our advanced AI engine matches citizens with the exact schemes, scholarships, and jobs they are eligible for based on their unique profile.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon bg-green-light text-green">🗣️</div>
+                    <h3>Multilingual Support</h3>
+                    <p>Speak or type in English, Hindi, Kannada, and more. Our native voice recognition breaks down digital literacy barriers.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon bg-saffron-light text-saffron">🤝</div>
+                    <h3>Human Assistance</h3>
+                    <p>Not tech-savvy? Our platform connects you with local trained assistants who will physically help you fill forms and secure benefits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Saarthi Core Features -->
+    <section id="core-features" class="info-section">
+        <div class="container">
+            <h2 class="section-title text-center text-blue">Platform Core Features</h2>
+            <div class="grid-3 mt-40">
+                <div class="card" style="padding: 25px;"><h4 class="text-saffron mb-10">1. AI Opportunity Finder</h4><p style="font-size: 14px;">Finds relevant schemes, jobs, scholarships, and welfare programs.</p></div>
+                <div class="card" style="padding: 25px;"><h4 class="text-saffron mb-10">2. Eligibility Checker</h4><p style="font-size: 14px;">Checks eligibility and explains the result in simple language.</p></div>
+                <div class="card" style="padding: 25px;"><h4 class="text-saffron mb-10">3. Human Assistant Marketplace</h4><p style="font-size: 14px;">Connects users with trained assistants for form filling and support.</p></div>
+                <div class="card" style="padding: 25px;"><h4 class="text-saffron mb-10">4. Multilingual & Voice Support</h4><p style="font-size: 14px;">Supports multiple regional languages via voice and text.</p></div>
+                <div class="card" style="padding: 25px;"><h4 class="text-saffron mb-10">5. Smart Dashboard</h4><p style="font-size: 14px;">Tracks applications, documents, tasks, and Amazon-style status updates.</p></div>
+                <div class="card" style="padding: 25px;"><h4 class="text-saffron mb-10">6. Income Generation</h4><p style="font-size: 14px;">Creates micro-employment for rural youth and local digital helpers.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Workflow Architecture -->
+    
+
+
+
+    <!-- 3 Ways to Discover -->
+    <section id="discovery-methods" class="info-section">
+        <div class="container text-center">
+            <h2 class="section-title text-blue">Three Ways to Discover Schemes</h2>
+            <p class="section-desc">Pick how you want to find the right government opportunity.</p>
+            <div class="grid-3 mt-40">
+                <div class="card hover-scale" onclick="openSmallModal('modalA')" style="padding:35px;cursor:pointer;background:rgba(255,255,255,0.88);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:160px;">
+                    <div style="font-size:40px;margin-bottom:12px;">&#128202;</div>
+                    <h3 class="text-saffron" style="margin:0 0 8px 0;">Sector Search</h3>
+                    <p class="text-muted" style="font-size:13px;">Browse by Education, Health, Agriculture...</p>
+                </div>
+                <div class="card hover-scale" onclick="openSmallModal('modalB')" style="padding:35px;cursor:pointer;background:rgba(255,255,255,0.88);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:160px;">
+                    <div style="font-size:40px;margin-bottom:12px;">&#128100;</div>
+                    <h3 class="text-saffron" style="margin:0 0 8px 0;">Profile-Based Filter Search</h3>
+                    <p class="text-muted" style="font-size:13px;">Filter by State, Age, Gender, Caste...</p>
+                </div>
+                <div class="card hover-scale" onclick="document.getElementById('floatingChatBtn').click();" style="padding:35px;cursor:pointer;background:rgba(255,255,255,0.88);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:160px;">
+                    <div style="font-size:40px;margin-bottom:12px;">&#129302;</div>
+                    <h3 class="text-saffron" style="margin:0 0 8px 0;">Talk with AI</h3>
+                    <p class="text-muted" style="font-size:13px;">Just describe your need, AI finds schemes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Micro-Employment USP -->
+    <section id="usp" class="info-section text-center">
+        <div class="container">
+            <div class="usp-banner">
+                <div class="usp-icon">💡</div>
+                <h2 class="usp-title">Earn While Helping</h2>
+                <p class="usp-text">“Saarthi helps users access government opportunities while creating income opportunities for trained assistants.”</p>
+                <p class="mt-20 text-dark">Saarthi turns public service access into a micro-employment ecosystem. Helping citizens apply, helping assistants earn.</p>
+                
+                <div class="grid-3 mt-40 text-left">
+                    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 12px;">
+                        <h4 class="text-blue">Revenue Split Example</h4>
+                        <p style="font-size: 14px; margin-top: 10px;">User pays <strong>₹50</strong> for assisted application.<br>Assistant earns <strong>₹35</strong>.<br>Platform keeps <strong>₹15</strong>.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 12px;">
+                        <h4 class="text-green">Social Impact</h4>
+                        <p style="font-size: 14px; margin-top: 10px;">Increasing access for rural citizens, supporting farmers, and creating massive digital employment.</p>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.5); padding: 20px; border-radius: 12px;">
+                        <h4 class="text-saffron">Trust & Safety</h4>
+                        <p style="font-size: 14px; margin-top: 10px;">Consent-first workflow, verified assistants, strict NDA enforcement, and secure document handling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-line"></div>
+
+    <!-- Application Features Integration -->
+    <div class="features-wrapper">
+        
+        <!-- Discover Section -->
+        <section id="discover" class="feature-section">
+            <div class="glass-container dual-layout hidden" style="display:none;">
+                <div class="panel query-panel">
+                    <h3>What do you need?</h3>
+                    <div class="input-with-mic">
+                        <textarea id="userQuery" placeholder="e.g., Mujhe silai machine ke liye loan chahiye..."></textarea>
+                        <button id="micBtnQuery" class="mic-btn" title="Speak">🎙️</button>
+                    </div>
+                    <button id="searchBtn" class="btn-primary w-100 mt-20">Analyze & Find Schemes</button>
+                </div>
+                
+                <div class="panel profile-panel">
+                    <h3>Your Profile</h3>
+                    <p class="subtitle">Helps us check your eligibility accurately.</p>
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label>State</label>
+                            <select id="p_state">
+                                <option value="All">All India</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Age</label>
+                            <input type="number" id="p_age" value="25">
+                        </div>
+                        <div class="input-group">
+                            <label>Gender</label>
+                            <select id="p_gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Annual Income (₹)</label>
+                            <input type="number" id="p_income" value="100000">
+                        </div>
+                        <div class="input-group full-width">
+                            <label>Occupation</label>
+                            <input type="text" id="p_occupation" placeholder="e.g., Farmer, Tailor, Student">
+                        </div>
+                        <div class="input-group full-width">
+                            <label>Preferred Language</label>
+                            <select id="p_language">
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Assamese">Assamese</option>
+                                <option value="Bengali">Bengali</option>
+                                <option value="Bodo">Bodo</option>
+                                <option value="Dogri">Dogri</option>
+                                <option value="Gujarati">Gujarati</option>
+                                <option value="Kannada">Kannada</option>
+                                <option value="Kashmiri">Kashmiri</option>
+                                <option value="Konkani">Konkani</option>
+                                <option value="Maithili">Maithili</option>
+                                <option value="Malayalam">Malayalam</option>
+                                <option value="Manipuri">Manipuri</option>
+                                <option value="Marathi">Marathi</option>
+                                <option value="Nepali">Nepali</option>
+                                <option value="Odia">Odia</option>
+                                <option value="Punjabi">Punjabi</option>
+                                <option value="Sanskrit">Sanskrit</option>
+                                <option value="Santali">Santali</option>
+                                <option value="Sindhi">Sindhi</option>
+                                <option value="Tamil">Tamil</option>
+                                <option value="Telugu">Telugu</option>
+                                <option value="Urdu">Urdu</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </section>
+
+        <!-- Available Agents Section -->
+        <section id="agents" class="feature-section mt-40">
+            <div class="section-heading text-center">
+                <h2>Available Saarthi Assistants</h2>
+                <p>These trained local assistants are currently online and ready to help you.</p>
+            </div>
+            <div class="agents-row">
+                <div class="agent-card">
+                    <div class="agent-status online"></div>
+                    <div class="agent-avatar bg-blue-light text-blue">👨🏽‍💼</div>
+                    <h4>Rajesh K.</h4>
+                    <p>Speaks: Hindi, English</p>
+                    <span class="agent-rating">⭐⭐⭐⭐⭐ (4.9)</span>
+                    <button class="btn-ghost w-100 mt-20" onclick="requestAgent('Rajesh K.', 'Hindi, English')">Request Rajesh</button>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-status online"></div>
+                    <div class="agent-avatar bg-green-light text-green">👩🏽‍💼</div>
+                    <h4>Priya S.</h4>
+                    <p>Speaks: Kannada, English</p>
+                    <span class="agent-rating">⭐⭐⭐⭐⭐ (5.0)</span>
+                    <button class="btn-ghost w-100 mt-20" onclick="requestAgent('Priya S.', 'Kannada, English')">Request Priya</button>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-status online"></div>
+                    <div class="agent-avatar bg-saffron-light text-saffron">👨🏽‍🌾</div>
+                    <h4>Amit P.</h4>
+                    <p>Speaks: Marathi, Hindi</p>
+                    <span class="agent-rating">⭐⭐⭐⭐ (4.7)</span>
+                    <button class="btn-ghost w-100 mt-20" onclick="requestAgent('Amit P.', 'Marathi, Hindi')">Request Amit</button>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-status online"></div>
+                    <div class="agent-avatar bg-blue-light text-blue">👩🏻‍🎓</div>
+                    <h4>Meenakshi V.</h4>
+                    <p>Speaks: Tamil, English</p>
+                    <span class="agent-rating">⭐⭐⭐⭐⭐ (4.8)</span>
+                    <button class="btn-ghost w-100 mt-20" onclick="requestAgent('Meenakshi V.', 'Tamil, English')">Request Meenakshi</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assistant Dashboard (Removed from DOM, now a Modal below) -->
+
+    </div>
+
+    
+    <!-- DigiLocker Modal -->
+    <div id="digilockerModal" class="modal hidden" style="align-items: center; z-index: 10005;">
+        <div class="modal-card" style="width: 450px; text-align: center; background: white; border-radius: 20px; padding: 40px;">
+            <div id="dl-step1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/DigiLocker_logo.svg/512px-DigiLocker_logo.svg.png" alt="DigiLocker" style="width: 150px; margin-bottom: 20px; display: inline-block;">
+                <h3 style="color: #1e3a8a; margin-bottom: 10px;">Link DigiLocker</h3>
+                <p style="color: #64748b; font-size: 14px; margin-bottom: 25px;">Securely fetch your documents to instantly verify eligibility.</p>
+                <input type="text" placeholder="Enter Aadhaar Number" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #cbd5e1; text-align: center; font-size: 16px; letter-spacing: 2px;">
+                <button onclick="startDigiLockerAuth()" class="btn-primary" style="width: 100%; background: #1e40af;">Send OTP</button>
+                <button onclick="document.getElementById('digilockerModal').classList.add('hidden')" class="btn-ghost" style="margin-top: 15px;">Cancel</button>
+            </div>
+            <div id="dl-step2" class="hidden">
+                <div class="spinner" style="border-top-color: #1e40af; margin: 0 auto;"></div>
+                <h4 style="color: #1e3a8a; margin-top: 20px;">Verifying & Fetching...</h4>
+                <p style="color: #64748b; font-size: 13px;">Please wait while we securely access your documents.</p>
+            </div>
+            <div id="dl-step3" class="hidden">
+                <div style="width: 60px; height: 60px; background: #22c55e; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; margin: 0 auto 20px;">✓</div>
+                <h3 style="color: #16a34a; margin-bottom: 15px;">Documents Verified!</h3>
+                <ul style="list-style: none; padding: 0; text-align: left; background: #f8fafc; padding: 15px; border-radius: 10px; font-size: 14px; color: #334155;">
+                    <li style="margin-bottom: 8px;">✅ Aadhaar Card fetched</li>
+                    <li style="margin-bottom: 8px;">✅ Income Certificate fetched</li>
+                    <li style="margin-bottom: 8px;">✅ Caste Certificate fetched</li>
+                </ul>
+                <button onclick="document.getElementById('digilockerModal').classList.add('hidden')" class="btn-primary" style="width: 100%; margin-top: 20px;">Continue Application</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- DigiLocker Modal -->
+    <div id="digilockerModal" class="modal hidden" style="align-items: center; z-index: 10005;">
+        <div class="modal-card" style="width: 450px; text-align: center; background: white; border-radius: 20px; padding: 40px;">
+            <div id="dl-step1">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/DigiLocker_logo.svg/512px-DigiLocker_logo.svg.png" alt="DigiLocker" style="width: 150px; margin-bottom: 20px; display: inline-block;">
+                <h3 style="color: #1e3a8a; margin-bottom: 10px;">Link DigiLocker</h3>
+                <p style="color: #64748b; font-size: 14px; margin-bottom: 25px;">Securely fetch your documents to instantly verify eligibility.</p>
+                <input type="text" placeholder="Enter Aadhaar Number" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #cbd5e1; text-align: center; font-size: 16px; letter-spacing: 2px;">
+                <button onclick="startDigiLockerAuth()" class="btn-primary" style="width: 100%; background: #1e40af;">Send OTP</button>
+                <button onclick="document.getElementById('digilockerModal').classList.add('hidden')" class="btn-ghost" style="margin-top: 15px;">Cancel</button>
+            </div>
+            <div id="dl-step2" class="hidden">
+                <div class="spinner" style="border-top-color: #1e40af; margin: 0 auto;"></div>
+                <h4 style="color: #1e3a8a; margin-top: 20px;">Verifying & Fetching...</h4>
+                <p style="color: #64748b; font-size: 13px;">Please wait while we securely access your documents.</p>
+            </div>
+            <div id="dl-step3" class="hidden">
+                <div style="width: 60px; height: 60px; background: #22c55e; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; margin: 0 auto 20px;">&#10003;</div>
+                <h3 style="color: #16a34a; margin-bottom: 15px;">Documents Verified!</h3>
+                <ul style="list-style: none; padding: 0; text-align: left; background: #f8fafc; padding: 15px; border-radius: 10px; font-size: 14px; color: #334155;">
+                    <li style="margin-bottom: 8px;">&#9989; Aadhaar Card fetched</li>
+                    <li style="margin-bottom: 8px;">&#9989; Income Certificate fetched</li>
+                    <li style="margin-bottom: 8px;">&#9989; Caste Certificate fetched</li>
+                </ul>
+                <button onclick="document.getElementById('digilockerModal').classList.add('hidden')" class="btn-primary" style="width: 100%; margin-top: 20px;">Continue Application</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eligibility Quiz Modal -->
+    <div id="eligibilityQuizModal" class="modal hidden" style="align-items: flex-start; padding-top: 50px; z-index: 10006;">
+        <div class="modal-card" style="width: 600px; max-width: 95%; background: white; border-radius: 20px; padding: 35px;">
+            <h2 style="color: #1d4ed8; margin-bottom: 10px; font-size: 24px;">&#128221; Pre-Application Verification</h2>
+            <p style="color: #475569; font-size: 14px; margin-bottom: 25px;">Please answer these background verification questions truthfully to confirm your eligibility for <strong id="eq-scheme-name">this scheme</strong>.</p>
+            
+            <div id="quizQuestions">
+                <div style="margin-bottom: 20px; padding: 15px; background: #f8fafc; border-radius: 10px; border: 1px solid #e2e8f0;">
+                    <p style="font-weight: 700; color: #1e293b; margin-bottom: 10px;">1. Is your annual family income strictly below ₹2.5 Lakhs?</p>
+                    <div style="display: flex; gap: 15px;">
+                        <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;"><input type="radio" name="q1" value="yes"> Yes, it is below ₹2.5L</label>
+                        <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;"><input type="radio" name="q1" value="no"> No, it is higher</label>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 20px; padding: 15px; background: #f8fafc; border-radius: 10px; border: 1px solid #e2e8f0;">
+                    <p style="font-weight: 700; color: #1e293b; margin-bottom: 10px;">2. Do you currently hold a valid BPL (Below Poverty Line) Ration Card?</p>
+                    <div style="display: flex; gap: 15px;">
+                        <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;"><input type="radio" name="q2" value="yes"> Yes</label>
+                        <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;"><input type="radio" name="q2" value="no"> No</label>
+                    </div>
+                </div>
+                
+                <div style="margin-bottom: 20px; padding: 15px; background: #f8fafc; border-radius: 10px; border: 1px solid #e2e8f0;">
+                    <p style="font-weight: 700; color: #1e293b; margin-bottom: 10px;">3. Have you availed any similar government benefits in the last 3 years?</p>
+                    <div style="display: flex; gap: 15px;">
+                        <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;"><input type="radio" name="q3" value="yes"> Yes</label>
+                        <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;"><input type="radio" name="q3" value="no"> No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="quizResult" class="hidden" style="padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: center; font-weight: 700;"></div>
+
+            <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px;">
+                <button onclick="document.getElementById('eligibilityQuizModal').classList.add('hidden')" class="btn-ghost" style="padding: 10px 20px;">Cancel</button>
+                <button id="submitQuizBtn" class="btn-primary" style="padding: 10px 24px; background: #16a34a;">Verify & Proceed</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Application Pipeline Modal -->
+    <div id="pipelineModal" class="modal hidden" style="z-index: 10010; align-items: flex-start; padding-top: 20px;">
+        <div class="modal-card" style="width: 800px; max-width: 95%; max-height: 90vh; overflow-y: auto; background: #fff; border-radius: 20px;">
+            <!-- Header -->
+            <div style="background: linear-gradient(to right, #1e40af, #3b82f6); padding: 20px 30px; color: white; display: flex; justify-content: space-between; border-radius: 20px 20px 0 0;">
+                <h2 style="margin: 0; font-size: 20px;">Application Pipeline: <span id="pipeSchemeName"></span></h2>
+                <button onclick="closeSmallModal('pipelineModal')" style="background: none; border: none; color: white; font-size: 28px; cursor: pointer;">&times;</button>
+            </div>
+            
+            <div style="padding: 30px;">
+                <!-- Step 1: Document Upload & Verification -->
+                <div id="pipeStep1">
+                    <h3 style="color: #1e3a8a;">Step 1: Document Upload & OCR Verification</h3>
+                    <p class="text-muted" style="margin-bottom: 20px; font-size: 14px;">Upload the required documents. Our system will extract text and verify details.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <div style="flex: 1; border: 2px dashed #cbd5e1; padding: 20px; text-align: center; border-radius: 12px; cursor: pointer;" onclick="simulateFileUpload('aadhaar', this)">
+                            <span style="font-size: 30px;">📄</span><br>Upload Aadhaar
+                            <div class="upload-status" style="font-size: 12px; color: #64748b; margin-top: 5px;">Click to upload</div>
+                        </div>
+                        <div style="flex: 1; border: 2px dashed #cbd5e1; padding: 20px; text-align: center; border-radius: 12px; cursor: pointer;" onclick="simulateFileUpload('pan', this)">
+                            <span style="font-size: 30px;">💳</span><br>Upload PAN
+                            <div class="upload-status" style="font-size: 12px; color: #64748b; margin-top: 5px;">Click to upload</div>
+                        </div>
+                        <div style="flex: 1; border: 2px dashed #cbd5e1; padding: 20px; text-align: center; border-radius: 12px; cursor: pointer;" onclick="simulateFileUpload('income', this)">
+                            <span style="font-size: 30px;">📜</span><br>Income Cert
+                            <div class="upload-status" style="font-size: 12px; color: #64748b; margin-top: 5px;">Click to upload</div>
+                        </div>
+                    </div>
+                    
+                    <div id="ocrLoading" class="hidden" style="margin-top: 30px; text-align: center;">
+                        <div class="spinner" style="margin: 0 auto; border-top-color: #1e40af;"></div>
+                        <p style="margin-top: 10px; color: #1e40af; font-weight: bold;">OCR Extracting Text & Detecting Quality...</p>
+                    </div>
+                    
+                    <div id="ocrResults" class="hidden" style="margin-top: 25px; padding: 20px; background: #f8fafc; border-radius: 10px; border: 1px solid #e2e8f0;">
+                        <h4 style="margin-bottom: 15px;">System Verification Results</h4>
+                        <ul style="list-style: none; padding: 0; font-size: 14px; line-height: 1.8;">
+                            <li style="color: #16a34a;">✅ <strong>Aadhaar:</strong> Verified (Data match: 98%)</li>
+                            <li style="color: #d97706;">⚠️ <strong>PAN:</strong> Blurry upload detected. Will require manual assistant verification.</li>
+                            <li style="color: #16a34a;">✅ <strong>Income Cert:</strong> Valid text extracted (Below ₹2.5L)</li>
+                            <li style="color: #b91c1c;">⚠️ <strong>Bank Passbook:</strong> Missing upload.</li>
+                        </ul>
+                        <button class="btn-primary w-100 mt-20" onclick="nextPipeStep(2)">Proceed to Eligibility Check</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Rule-based Eligibility Check -->
+                <div id="pipeStep2" class="hidden">
+                    <h3 style="color: #1e3a8a;">Step 2: Deterministic Eligibility Check</h3>
+                    <p style="font-size: 14px; margin-bottom: 20px;">System is applying hard-coded rule-based logic to verify qualification...</p>
+                    <div style="background: #eff6ff; padding: 20px; border-radius: 12px; border-left: 5px solid #3b82f6;">
+                        <ul style="list-style: none; padding: 0; line-height: 2; font-size: 14px;">
+                            <li>✅ <strong>Age Check:</strong> Profile age (>18) matches scheme rule.</li>
+                            <li>✅ <strong>Income Limit:</strong> OCR Income (< ₹2.5L) meets requirement.</li>
+                            <li>⚠️ <strong>Document Status:</strong> Missing Bank Passbook & Blurry PAN allowed for conditional proceeding.</li>
+                        </ul>
+                        <div style="margin-top: 15px; padding: 10px; background: #dcfce7; color: #16a34a; border-radius: 8px; font-weight: bold; text-align: center;">Result: ELIGIBLE</div>
+                    </div>
+                    <button class="btn-primary w-100 mt-20" onclick="nextPipeStep(3)">Proceed to Application Mode</button>
+                </div>
+
+                <!-- Step 3: Marketplace -->
+                <div id="pipeStep3" class="hidden">
+                    <h3 style="color: #1e3a8a;">Step 3: Application Mode Marketplace</h3>
+                    <p style="font-size: 14px; margin-bottom: 20px;">Choose how you want to complete the government forms.</p>
+                    <div style="display: flex; gap: 20px;">
+                        <div style="flex: 1; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; text-align: center; cursor: pointer; transition: all 0.3s;" class="hover-scale" onclick="nextPipeStep(4, 'self')">
+                            <div style="font-size: 40px; margin-bottom: 10px;">✍️</div>
+                            <h4 style="color: #334155;">Self Apply</h4>
+                            <p style="font-size: 13px; color: #64748b; margin-top: 10px;">Free. Fill the complex government forms yourself.</p>
+                        </div>
+                        <div style="flex: 1; border: 2px solid #3b82f6; border-radius: 12px; padding: 25px; text-align: center; cursor: pointer; background: #eff6ff; transition: all 0.3s;" class="hover-scale" onclick="nextPipeStep(4, 'assistant')">
+                            <div style="font-size: 40px; margin-bottom: 10px;">👨‍💼</div>
+                            <h4 style="color: #1d4ed8;">Request Assistant</h4>
+                            <p style="font-size: 13px; color: #64748b; margin-top: 10px;">₹50 Fee. Smart matching assigns best local expert based on language, rating, and availability.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Form Workflow & AI Recheck -->
+                <div id="pipeStep4" class="hidden">
+                    <h3 id="formModeTitle" style="color: #1e3a8a;">Step 4: Form Workflow</h3>
+                    
+                    <div id="assistantMatchBlock" class="hidden" style="margin-bottom: 20px; padding: 15px; background: #f0fdf4; border-radius: 10px; border: 1px solid #bbf7d0;">
+                        <strong style="color: #16a34a; font-size: 15px;">✅ Assistant Automatically Matched!</strong><br>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
+                            <div style="font-size: 30px;">👨🏽‍💼</div>
+                            <div>
+                                <strong id="pipeAssistName">Loading...</strong> (Speaks: <span id="pipeAssistLang">Loading...</span>)<br>
+                                <span style="font-size: 12px; color: #64748b;">Rating: ⭐⭐⭐⭐⭐ (<span id="pipeAssistRating">4.9</span>) | Expertise: <span id="pipeAssistSector">General</span></span>
+                            </div>
+                        </div>
+                        <p style="font-size: 12px; color: #16a34a; margin-top: 10px;"><span id="pipeAssistName2">Your Assistant</span> is now assisting you. They will verify missing documents and fill the form securely.</p>
+                    </div>
+
+                    <div style="border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; background: #f8fafc;">
+                        <h4 style="margin-bottom: 15px;">Application Draft (Filled)</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div><label style="font-size: 12px; color: #64748b;">Applicant Name</label><input type="text" value="Raj Kumar" disabled style="width:100%; padding: 8px; border-radius: 6px; border: 1px solid #cbd5e1;"></div>
+                            <div><label style="font-size: 12px; color: #64748b;">State</label><input type="text" value="Karnataka" disabled style="width:100%; padding: 8px; border-radius: 6px; border: 1px solid #cbd5e1;"></div>
+                            <div><label style="font-size: 12px; color: #64748b;">Aadhaar Link</label><input type="text" value="Verified ✅" disabled style="width:100%; padding: 8px; border-radius: 6px; border: 1px solid #cbd5e1; background: #dcfce7; color: #16a34a;"></div>
+                            <div><label style="font-size: 12px; color: #64748b;">PAN Link</label><input type="text" value="Assistant Verified ✅" disabled style="width:100%; padding: 8px; border-radius: 6px; border: 1px solid #cbd5e1; background: #dcfce7; color: #16a34a;"></div>
+                        </div>
+                    </div>
+
+                    <div id="aiRecheckBlock" style="margin-top: 20px; padding: 15px; background: #fffbeb; border-radius: 10px; border: 1px solid #fde68a;">
+                        <h4 style="color: #b45309; margin-bottom: 10px;">🤖 AI Validation Recheck (Final Layer)</h4>
+                        <p style="font-size: 13px; color: #92400e;">Before final submission, AI is re-validating the assistant's work...</p>
+                        <ul style="font-size: 13px; margin-top: 10px; color: #16a34a; font-weight: 600; list-style: none; padding: 0;">
+                            <li>✅ Name matches Aadhaar database exactly.</li>
+                            <li>✅ No missing fields detected.</li>
+                            <li>✅ Final workflow consistency check passed.</li>
+                        </ul>
+                    </div>
+
+                    <button class="btn-primary w-100 mt-20" onclick="submitPipelineApplication()" id="finalSubmitBtn" style="font-size: 16px; padding: 15px; background: #16a34a;">Final Submit Application</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rate Assistant Modal -->
+    <div id="rateModal" class="modal hidden" style="z-index: 10020; align-items: center;">
+        <div class="modal-card" style="width: 450px; text-align: center; background: white; border-radius: 20px; padding: 30px;">
+            <div style="font-size: 40px; margin-bottom: 10px;">🌟</div>
+            <h2 style="color: #1e3a8a;">Rate Your Assistant</h2>
+            <p class="text-muted" style="margin-bottom: 20px;">Your feedback trains our AI matching loop!</p>
+            
+            <p style="font-size: 14px;">How was your experience with <strong id="rateAssistantName" style="color: #1d4ed8;"></strong>?</p>
+            <div style="font-size: 40px; margin: 15px 0; display: flex; justify-content: center; gap: 5px;" id="starRating">
+                <span style="cursor: pointer; transition: 0.2s;" onclick="setRating(1)">⭐</span>
+                <span style="cursor: pointer; transition: 0.2s;" onclick="setRating(2)">⭐</span>
+                <span style="cursor: pointer; transition: 0.2s;" onclick="setRating(3)">⭐</span>
+                <span style="cursor: pointer; transition: 0.2s;" onclick="setRating(4)">⭐</span>
+                <span style="cursor: pointer; transition: 0.2s;" onclick="setRating(5)">⭐</span>
+            </div>
+            
+            <div style="text-align: left; margin-top: 20px;">
+                <label style="font-size: 12px; font-weight: bold; color: #64748b;">Feedback (Communication, Speed, Accuracy):</label>
+                <textarea id="rateFeedback" placeholder="Your feedback improves future matches..." style="width: 100%; height: 80px; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; margin-top: 5px; font-family: inherit; font-size: 13px;"></textarea>
+            </div>
+            
+            <button class="btn-primary w-100 mt-20" onclick="submitRating()" style="background: #1e40af;">Submit Feedback & Enhance AI</button>
+            <button class="btn-ghost w-100 mt-10" onclick="closeSmallModal('rateModal')">Skip</button>
+        </div>
+    </div>
+
+    
+    <!-- Micro-Employment Modal -->
+    <div id="microEmploymentModal" class="modal hidden" style="align-items: center; z-index: 10010;">
+        <div class="modal-card" style="width: 900px; max-width: 95%; max-height: 90vh; overflow-y: auto; background: white; border-radius: 20px; padding: 0;">
+            <div style="background: linear-gradient(135deg, #f97316, #ea580c); padding: 20px 30px; color: white; display: flex; justify-content: space-between; border-radius: 20px 20px 0 0;">
+                <h2 style="margin: 0; font-size: 22px;">Earn While Helping</h2>
+                <button onclick="closeSmallModal('microEmploymentModal')" style="background: none; border: none; color: white; font-size: 28px; cursor: pointer;">&times;</button>
+            </div>
+            <div style="padding: 20px;">
+                <!-- Micro-Employment USP -->
+    <section id="target" class="info-section bg-transparent text-dark">
+        <div class="container text-center">
+            <h2 class="section-title">Who We Serve</h2>
+            <p class="section-desc text-muted mb-40">Saarthi AI is built for everyone who needs access to public services and opportunities.</p>
+            <div class="tags-wrapper">
+                <span class="tag">Citizens</span>
+                <span class="tag">Students</span>
+                <span class="tag">Farmers</span>
+                <span class="tag">Women Entrepreneurs</span>
+                <span class="tag">Job Seekers</span>
+                <span class="tag">Startups</span>
+                <span class="tag">MSMEs</span>
+                <span class="tag">NGOs</span>
+                <span class="tag">Orphanages</span>
+                <span class="tag">Rural Communities</span>
+                <span class="tag">Senior Citizens</span>
+                <span class="tag">Low-Income Families</span>
+                <span class="tag">Persons with Disabilities</span>
+            </div>
+        </div>
+    </section>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating Chat Widget (Single) -->
+    <button id="floatingChatBtn" style="position:fixed;bottom:28px;right:28px;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#f97316,#ea580c);color:white;font-size:22px;border:none;cursor:pointer;box-shadow:0 6px 20px rgba(249,115,22,0.4);z-index:10000;display:flex;align-items:center;justify-content:center;">&#128172;</button>
+
+    <div id="chatWidget" class="hidden" style="position:fixed;bottom:100px;right:28px;width:370px;height:520px;background:white;border-radius:16px;box-shadow:0 16px 48px rgba(0,0,0,0.18);z-index:10000;display:flex;flex-direction:column;overflow:hidden;border:1px solid #e2e8f0;">
+        <div style="background:linear-gradient(135deg,#1d4ed8,#1e40af);color:white;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;">
+            <div>
+                <h3 style="margin:0;font-size:16px;">&#129302; Saarthi AI Assistant</h3>
+                <p style="margin:0;font-size:11px;opacity:0.8;">Powered by Gemini AI</p>
+            </div>
+            <button id="closeChatBtn" style="background:none;border:none;color:white;font-size:22px;cursor:pointer;line-height:1;">&times;</button>
+        </div>
+        <div id="chatMessages" style="flex:1;padding:16px;overflow-y:auto;background:#f8fafc;display:flex;flex-direction:column;gap:10px;">
+            <div style="background:white;padding:12px 16px;border-radius:14px;align-self:flex-start;max-width:85%;border:1px solid #e2e8f0;font-size:13px;line-height:1.5;">
+                &#128075; Hello! I am your Saarthi AI. Type or speak your need &#8212; for example: <em>"I am a farmer from Karnataka and need crop insurance."</em>
+            </div>
+        </div>
+        <div style="padding:14px;border-top:1px solid #e2e8f0;display:flex;gap:8px;background:white;align-items:center;">
+            <input type="text" id="chatInput" placeholder="Type your query..." style="flex:1;padding:10px 14px;border:1px solid #e2e8f0;border-radius:24px;outline:none;font-size:13px;">
+            <button id="sendChatBtn" style="background:#1d4ed8;color:white;border:none;border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:16px;">&#10148;</button>
+            <button id="voiceChatBtn" style="background:#f97316;color:white;border:none;border-radius:50%;width:38px;height:38px;cursor:pointer;font-size:16px;" title="Voice Input">&#127908;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo-area mb-20">
+                    <span class="logo-text text-white">Saarthi AI</span>
+                </div>
+                <p>Guiding every citizen forward with the power of Artificial Intelligence and Human compassion.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#problem">Problem & Solution</a></li>
+                    <li><a href="#discover">Discover Schemes</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Powered By</h4>
+                <p>Gemini AI</p>
+                <p>Sarvam AI (Indic Voice & Translation)</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Saarthi AI Platform. Built for Social Impact.</p>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal hidden">
+        <div class="modal-card">
+            <h3 id="authTitle">Welcome to Saarthi AI</h3>
+            <p id="authSubtitle" class="mb-20 text-muted">Sign in to manage your applications and access your assigned agents.</p>
+            
+            <div id="authNameGroup" class="hidden">
+                <label>Full Name</label>
+                <input type="text" id="a_name" class="mb-15" placeholder="e.g., Ramesh Kumar">
+            </div>
+            
+            <label>Email / Phone</label>
+            <input type="text" id="a_email" class="mb-15" placeholder="Enter your email or phone">
+            
+            <label>Password</label>
+            <input type="password" id="a_password" class="mb-20" placeholder="••••••••">
+            
+            <div class="modal-footer" style="flex-direction: column; align-items: stretch; gap: 10px;">
+                <button id="submitAuthBtn" class="btn-primary w-100">Login</button>
+                <button id="toggleAuthBtn" class="btn-ghost w-100" style="border: none;">Don't have an account? Register</button>
+                <button id="closeAuthBtn" class="btn-ghost w-100 mt-20" style="border: none; color: red;">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div id="feedbackModal" class="modal hidden">
+        <div class="modal-card">
+            <h3>Provide Feedback</h3>
+            <p id="feedbackTarget" class="mb-20 text-muted"></p>
+            
+            <label>Rating</label>
+            <select id="f_rating" class="mb-15">
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Good</option>
+                <option value="3">⭐⭐⭐ - Average</option>
+                <option value="2">⭐⭐ - Poor</option>
+                <option value="1">⭐ - Terrible</option>
+            </select>
+            
+            <label>Issue Type (if any)</label>
+            <select id="f_issue" class="mb-15">
+                <option value="None">No Issue</option>
+                <option value="Wrong recommendation">Wrong recommendation</option>
+                <option value="Not eligible">Not eligible</option>
+                <option value="Confusing process">Confusing process</option>
+            </select>
+            
+            <label>Comments</label>
+            <textarea id="f_comment" placeholder="Tell us more..." class="mb-20"></textarea>
+            
+            <div class="modal-footer">
+                <button id="cancelFeedback" class="btn-ghost">Cancel</button>
+                <button id="submitFeedback" class="btn-primary">Submit Feedback</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Modal -->
+    <div id="dashboardModal" class="modal hidden" style="align-items: flex-start; padding-top: 50px;">
+        <div class="modal-card" style="width: 900px; max-width: 95%; max-height: 85vh; overflow-y: auto; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2 class="section-title text-blue" style="margin: 0; font-size: 28px;">Saarthi Assistant Dashboard</h2>
+                <button id="closeDashboardBtn" class="close-btn" style="color: var(--text-dark); font-size: 32px;">&times;</button>
+            </div>
+            <p class="mb-20 text-muted">Manage assigned applications and workflows for citizens in real-time.</p>
+            <div id="tasksContainer" class="tasks-grid">
+                <!-- Tasks injected here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal A: Sector Search (Full Dashboard Style) -->
+    <div id="modalA" class="modal hidden" style="align-items: flex-start; padding-top: 50px;">
+        <div class="modal-card" style="width: 820px; max-width: 95%; max-height: 85vh; overflow-y: auto; background: rgba(255,255,255,0.97); backdrop-filter: blur(20px);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <h2 style="margin:0; font-size:26px; color:#1d4ed8;">📊 Sector Search</h2>
+                <button onclick="closeSmallModal('modalA')" style="background:none; border:none; font-size:30px; cursor:pointer; color:#475569;">&times;</button>
+            </div>
+            <p style="color:#475569; margin-bottom:24px; font-size:14px;">Select a sector to instantly view all matching government schemes.</p>
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:16px;">
+                <button class="sector-btn" onclick="searchBySector('Education &amp; Jobs'); closeSmallModal('modalA');">🎓<span>Education &amp; Jobs</span><small>Scholarships, Training, Employment</small></button>
+                <button class="sector-btn" onclick="searchBySector('Finance &amp; Business'); closeSmallModal('modalA');">📈<span>Finance &amp; Business</span><small>Loans, MSME, Startup Grants</small></button>
+                <button class="sector-btn" onclick="searchBySector('Agriculture'); closeSmallModal('modalA');">🌾<span>Agriculture</span><small>Crop Insurance, Kisan Schemes</small></button>
+                <button class="sector-btn" onclick="searchBySector('Health'); closeSmallModal('modalA');">🏥<span>Health</span><small>Ayushman, Jan Arogya</small></button>
+                <button class="sector-btn" onclick="searchBySector('Welfare Support'); closeSmallModal('modalA');">🍲<span>Food &amp; Welfare</span><small>Ration, PDS, MNREGS</small></button>
+                <button class="sector-btn" onclick="searchBySector('Community &amp; Social Support'); closeSmallModal('modalA');">🤝<span>Community &amp; Social</span><small>Women, SC/ST, Minority</small></button>
+                <button class="sector-btn" onclick="searchBySector('Public Services'); closeSmallModal('modalA');">🏛️<span>Public Services</span><small>Housing, Documents, Utilities</small></button>
+                <button class="sector-btn" onclick="searchBySector('Skill Development'); closeSmallModal('modalA');">💡<span>Skill Development</span><small>PM Kaushal, Digital India</small></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal B: Why Do You Need (Full Profile Form) -->
+    <div id="modalB" class="modal hidden" style="align-items: flex-start; padding-top: 50px;">
+        <div class="modal-card" style="width: 700px; max-width: 95%; max-height: 88vh; overflow-y: auto; background: rgba(255,255,255,0.97); backdrop-filter: blur(20px);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <h2 style="margin:0; font-size:26px; color:#1d4ed8;">👤 Why Do You Need?</h2>
+                <button onclick="closeSmallModal('modalB')" style="background:none; border:none; font-size:30px; cursor:pointer; color:#475569;">&times;</button>
+            </div>
+            <p style="color:#475569; margin-bottom:20px; font-size:14px;">Tell us more about yourself so we can find the most relevant schemes for you.</p>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-bottom:15px;">
+                <div>
+                    <label style="font-size:12px; font-weight:700; color:#374151; display:block; margin-bottom:6px;">State ▽</label>
+                    <select id="mb_state" style="width:100%; padding:10px; border-radius:10px; border:1px solid #e2e8f0;">
+                        <option value="">Select State</option>
+                        <option>Andhra Pradesh</option><option>Arunachal Pradesh</option><option>Assam</option>
+                        <option>Bihar</option><option>Chhattisgarh</option><option>Goa</option>
+                        <option>Gujarat</option><option>Haryana</option><option>Himachal Pradesh</option>
+                        <option>Jharkhand</option><option>Karnataka</option><option>Kerala</option>
+                        <option>Madhya Pradesh</option><option>Maharashtra</option><option>Manipur</option>
+                        <option>Meghalaya</option><option>Mizoram</option><option>Nagaland</option>
+                        <option>Odisha</option><option>Punjab</option><option>Rajasthan</option>
+                        <option>Sikkim</option><option>Tamil Nadu</option><option>Telangana</option>
+                        <option>Tripura</option><option>Uttar Pradesh</option><option>Uttarakhand</option>
+                        <option>West Bengal</option><option>Delhi</option><option>Jammu &amp; Kashmir</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-size:12px; font-weight:700; color:#374151; display:block; margin-bottom:6px;">Gender ▽</label>
+                    <select id="mb_gender" style="width:100%; padding:10px; border-radius:10px; border:1px solid #e2e8f0;">
+                        <option value="">Select Gender</option>
+                        <option>Male</option><option>Female</option><option>Transgender</option><option>Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-size:12px; font-weight:700; color:#374151; display:block; margin-bottom:6px;">Age ▽</label>
+                    <input id="mb_age" type="number" placeholder="e.g. 28" style="width:100%; padding:10px; border-radius:10px; border:1px solid #e2e8f0;">
+                </div>
+                <div>
+                    <label style="font-size:12px; font-weight:700; color:#374151; display:block; margin-bottom:6px;">Caste ▽</label>
+                    <select id="mb_caste" style="width:100%; padding:10px; border-radius:10px; border:1px solid #e2e8f0;">
+                        <option value="">Select Category</option>
+                        <option>General</option><option>OBC</option><option>SC</option><option>ST</option><option>EWS</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-size:12px; font-weight:700; color:#374151; display:block; margin-bottom:6px;">Education ▽</label>
+                    <select id="mb_edu" style="width:100%; padding:10px; border-radius:10px; border:1px solid #e2e8f0;">
+                        <option value="">Select Education</option>
+                        <option>No Formal Education</option><option>Primary School</option><option>Secondary / 10th</option>
+                        <option>Higher Secondary / 12th</option><option>Diploma / ITI</option>
+                        <option>Graduate</option><option>Postgraduate</option><option>PhD</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-size:12px; font-weight:700; color:#374151; display:block; margin-bottom:6px;">Economic Status ▽</label>
+                    <select id="mb_eco" style="width:100%; padding:10px; border-radius:10px; border:1px solid #e2e8f0;">
+                        <option value="">Select Status</option>
+                        <option>Below Poverty Line (BPL)</option><option>Low Income (₹0–₹1L/yr)</option>
+                        <option>Middle Income (₹1L–₹5L/yr)</option><option>Upper Middle (₹5L–₹10L/yr)</option>
+                        <option>High Income (₹10L+/yr)</option>
+                    </select>
+                </div>
+                <div style="grid-column: span 2;">
+                    <label style="font-size:12px; font-weight:700; color:#374151; display:block; margin-bottom:6px;">Occupation</label>
+                    <input type="text" id="mb_occupation" placeholder="e.g. Farmer, Student, Tailor" style="width:100%; padding:10px; border-radius:10px; border:1px solid #e2e8f0;">
+                </div>
+            </div>
+
+            <div style="margin-bottom:15px;">
+                <label style="font-size:12px; font-weight:700; color:#374151; display:block; margin-bottom:6px;">What do you need? (in your own words)</label>
+                <textarea id="mb_need" placeholder="e.g. I am a farmer and need help with crop loan or insurance..." style="width:100%; padding:12px; border-radius:10px; border:1px solid #e2e8f0; min-height:80px; resize:none;"></textarea>
+            </div>
+
+            <div style="display:flex; gap:10px; justify-content:flex-end;">
+                <button onclick="closeSmallModal('modalB')" style="padding:10px 20px; border-radius:10px; border:1px solid #e2e8f0; background:white; cursor:pointer; font-weight:600;">Cancel</button>
+                <button onclick="submitProfileSearch()" style="padding:10px 24px; border-radius:10px; background:#f97316; color:white; border:none; cursor:pointer; font-weight:700;">🔍 Find My Schemes</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Results Modal -->
+    <div id="resultsModal" class="modal hidden" style="align-items: flex-start; padding-top: 40px; z-index: 10002;">
+        <div class="modal-card" style="width: 1100px; max-width: 95%; max-height: 85vh; overflow-y: auto; background: rgba(255, 255, 255, 0.97); backdrop-filter: blur(20px);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <div>
+                    <h2 style="margin:0; font-size:26px; color:#1d4ed8;">📋 Recommended Schemes</h2>
+                    <p style="font-size: 13px; color: #475569; margin-top: 5px;">Based on your profile and search criteria</p>
+                </div>
+                <button onclick="closeSmallModal('resultsModal')" style="background:none; border:none; font-size:30px; cursor:pointer; color:#475569;">&times;</button>
+            </div>
+            
+            <!-- Filters Bar -->
+            <div class="dashboard-filters" style="display: flex; gap: 10px; justify-content: flex-start; margin-bottom: 20px; flex-wrap: wrap;">
+                <input type="text" id="schemeSearch" placeholder="Search scheme by name..." style="padding: 8px 15px; border-radius: 8px; border: 1px solid #ddd; flex: 1;">
+                <select id="filterSector" style="padding: 8px 15px; border-radius: 8px; border: 1px solid #ddd;">
+                    <option value="">All Sectors</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Finance & Business">Finance & Business</option>
+                    <option value="Education & Jobs">Education & Jobs</option>
+                    <option value="Health">Health</option>
+                </select>
+                <select id="sortSchemes" style="padding: 8px 15px; border-radius: 8px; border: 1px solid #ddd;">
+                    <option value="match">Sort by: Match Score</option>
+                    <option value="deadline">Sort by: Deadline</option>
+                    <option value="newest">Sort by: Newest</option>
+                </select>
+            </div>
+
+            <div id="loadingSpinner" class="loading-state hidden">
+                <div class="spinner"></div>
+                <p>AI is finding the best schemes for you...</p>
+            </div>
+            
+            <div id="cardsWrapper" class="recommendations-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;"></div>
+            
+            <div id="emptyState" class="hidden text-center mt-20" style="padding: 40px; background: rgba(255,255,255,0.8); border-radius: 12px;">
+                <p>No matching schemes found. Try a broader search.</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Scheme Details Modal -->
+    <div id="schemeDetailsModal" class="modal hidden" style="align-items: flex-start; padding-top: 40px; z-index: 10015;">
+        <div class="modal-card" style="width: 800px; max-width: 95%; max-height: 85vh; overflow-y: auto; background: rgba(255, 255, 255, 0.98);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+                <div>
+                    <h2 id="sd-name" class="text-blue m-0" style="font-size: 24px;">Scheme Name</h2>
+                    <span id="sd-sector" class="badge-partial mt-10" style="display: inline-block;">Sector</span>
+                </div>
+                <button class="close-btn" onclick="closeSmallModal('schemeDetailsModal')" style="background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px 15px; font-size: 14px; color: #334155; cursor: pointer; display: flex; align-items: center; gap: 5px; font-weight: bold;">&#128281; Back</button>
+
+            </div>
+            
+            <div class="tabs" style="display: flex; gap: 10px; border-bottom: 2px solid #eee; margin-bottom: 20px;">
+                <button class="tab-btn active" style="padding: 10px 15px; background: none; border: none; border-bottom: 2px solid var(--primary-blue); font-weight: bold; color: var(--primary-blue);">Details</button>
+                <button class="tab-btn" style="padding: 10px 15px; background: none; border: none; color: #666;">Benefits</button>
+                <button class="tab-btn" style="padding: 10px 15px; background: none; border: none; color: #666;">Eligibility</button>
+                <button class="tab-btn" style="padding: 10px 15px; background: none; border: none; color: #666;">Process</button>
+                <button class="tab-btn" style="padding: 10px 15px; background: none; border: none; color: #666;">Documents</button>
+            </div>
+
+            <div id="sd-content" style="font-size: 14px; line-height: 1.6; color: #333;">
+                <!-- Content injected via JS -->
+            </div>
+            
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; display: flex; gap: 15px;">
+                <button class="btn-primary" onclick="alert('Assistant request created. A trained Saarthi assistant will help you verify documents and complete the form.')">Apply with Assistant</button>
+                <button class="btn-ghost" style="border: 1px solid #ddd;" onclick="openDigiLocker()">&#128272; Verify via DigiLocker</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Chat Widget -->
+
+    <script src="app.js"></script>
+</body>
+</html>

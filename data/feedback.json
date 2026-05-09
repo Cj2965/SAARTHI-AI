@@ -1,0 +1,28 @@
+[
+  {
+    "id": "bf080ad9-4cc3-473c-8d16-ba3b4e84ada7",
+    "timestamp": "2026-05-09T07:48:17.132382",
+    "user_profile": {
+      "age": 25,
+      "gender": "Male",
+      "income": 100000,
+      "language": "English",
+      "occupation": null,
+      "query_intent": {
+        "age": null,
+        "gender": null,
+        "income": null,
+        "language": "English",
+        "need": "Business loan",
+        "occupation": null,
+        "sector": "Finance & Business",
+        "state": null
+      },
+      "state": "All"
+    },
+    "opportunity_name": "Mudra Loan",
+    "rating": "5",
+    "issue_type": "None",
+    "comment": "thank you\n"
+  }
+]
