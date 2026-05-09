@@ -171,7 +171,8 @@ def request_assistant(user_profile, opportunity):
         "language": user_lang,
         "fee": best_match["fee"],
         "status": "Pending",
-        "created_at": datetime.datetime.now().isoformat()
+        "created_at": datetime.datetime.now().isoformat(),
+        "user_profile": user_profile
     }
     
     tasks = load_json("tasks.json")
