@@ -70,11 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!email?.value || !pass?.value) return alert('Please fill in all details.');
         
         if (email.value === 'admin@saarthi.ai' && pass.value === 'admin123') {
-            alert('Welcome Admin! You now have access to the Dashboard.');
+            alert('Welcome Admin! You now have access to the Admin Dashboard.');
             document.getElementById('dashboardNavBtn').style.display = 'inline-block';
         } else {
             alert(`Successfully ${authMode === 'login' ? 'logged in' : 'registered'} as ${email.value}!`);
-            document.getElementById('dashboardNavBtn').style.display = 'none'; // normal users don't see dashboard
+            document.getElementById('dashboardNavBtn').style.display = 'none'; 
+            // Normal users use the Track Applications button, which is always visible.
         }
         closeModal('authModal');
     });
